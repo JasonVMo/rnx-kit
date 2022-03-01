@@ -1,5 +1,11 @@
 # Change Log - @rnx-kit/dep-check
 
+## 1.12.6
+
+### Patch Changes
+
+- a4988f1: Explicitly declare support for Node 12+
+
 ## 1.12.5
 
 ### Patch Changes
