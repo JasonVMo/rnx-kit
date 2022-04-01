@@ -56,15 +56,13 @@
     "eslint-plugin-react": "^7.26.0",
     "micromatch": "^4.0.0"
   },
-  "workspaces": {
-    "packages": [
-      "docsite",
-      "incubator/*",
-      "packages/@types/*",
-      "packages/*",
-      "scripts"
-    ]
-  },
+  "workspaces": [
+    "docsite",
+    "incubator/*",
+    "packages/@types/*",
+    "packages/*",
+    "scripts"
+  ],
   "eslintConfig": {
     "extends": "@rnx-kit/eslint-config"
   },
