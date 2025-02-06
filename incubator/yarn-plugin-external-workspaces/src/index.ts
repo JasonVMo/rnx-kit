@@ -1,6 +1,6 @@
 import {
-  ConfigurationDefinitionMap,
-  Plugin,
+  type ConfigurationDefinitionMap,
+  type Plugin,
   SettingsType,
 } from "@yarnpkg/core";
 import { CONFIG_DEFAULT, CONFIG_KEY } from "./constants";
@@ -27,4 +27,5 @@ const plugin: Plugin = {
   resolvers: [ExternalResolver],
 };
 
+// eslint-disable-next-line no-restricted-exports
 export default plugin;

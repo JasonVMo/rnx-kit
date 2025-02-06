@@ -1,18 +1,18 @@
 import {
-  Descriptor,
+  type Descriptor,
   LinkType,
-  Locator,
+  type Locator,
   Manifest,
-  MinimalResolveOptions,
-  Package,
-  ResolveOptions,
-  Resolver,
+  type MinimalResolveOptions,
+  type Package,
+  type ResolveOptions,
+  type Resolver,
   structUtils,
 } from "@yarnpkg/core";
 import { stringifyIdent } from "@yarnpkg/core/lib/structUtils";
 import { CONFIG_DEFAULT, CONFIG_KEY, RANGE_PROTOCOL } from "./constants";
 import { loadConfigFile } from "./finder";
-import { DefinitionFinder } from "./types";
+import { type DefinitionFinder } from "./types";
 
 /**
  * The resolver implements the logic for the external: protocol.
@@ -187,7 +187,7 @@ export class ExternalResolver implements Resolver {
   async getSatisfying(
     descriptor: Descriptor,
     dependencies: Record<string, Package>,
-    locators: Array<Locator>,
+    locators: Locator[],
     opts: ResolveOptions
   ) {
     const [locator] = await this.getCandidates(descriptor, dependencies, opts);

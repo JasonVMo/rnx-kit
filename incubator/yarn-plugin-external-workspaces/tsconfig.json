@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./lib",
-    "module": "CommonJS",
-    "esModuleInterop": true
+    "module": "ESNext"
   },
   "extends": "@rnx-kit/tsconfig/tsconfig.json",
   "include": ["src"]

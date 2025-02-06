@@ -24,10 +24,13 @@
     "node": ">=16.17"
   },
   "scripts": {
-    "build": "rnx-kit-scripts build",
+    "build": "builder build plugin",
     "format": "rnx-kit-scripts format",
     "lint": "rnx-kit-scripts lint",
     "test": "rnx-kit-scripts test"
+  },
+  "dependencies": {
+    "@yarnpkg/core": "^4.0.0"
   },
   "devDependencies": {
     "@rnx-kit/eslint-config": "*",
@@ -35,7 +38,7 @@
     "@rnx-kit/scripts": "*",
     "@rnx-kit/tsconfig": "*",
     "@types/node": "^20.0.0",
-    "@yarnpkg/core": "^4.0.0",
+    "@yarnpkg/builder": "^4.2.0",
     "eslint": "^9.0.0",
     "jest": "^29.2.1",
     "prettier": "^3.0.0",

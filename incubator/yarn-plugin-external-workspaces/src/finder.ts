@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { PackageDefinition, type DefinitionFinder } from "./types";
+import type { DefinitionFinder, PackageDefinition } from "./types";
 
 /**
  * Attempt to load a definition finder from the specified config file path. This looks to see if the configPath

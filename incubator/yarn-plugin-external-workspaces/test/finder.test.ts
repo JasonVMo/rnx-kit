@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createFinderFromJs, tryJsonLoad } from "../src/finder";
-import { PackageDefinition } from "../src/types";
+import type { PackageDefinition } from "../src/types";
 
 const fixtureContext: Record<string, PackageDefinition> = {
   package1: {
