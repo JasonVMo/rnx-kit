@@ -2,25 +2,25 @@
   "private": true,
   "name": "@rnx-kit/yarn-plugin-external-workspaces",
   "version": "0.0.1",
-  "description": "EXPERIMENTAL - USE WITH CAUTION - yarn-plugin-external-workspaces",
+  "description": "EXPERIMENTAL - USE WITH CAUTION - @rnx-kit/yarn-plugin-external-workspaces",
   "homepage": "https://github.com/microsoft/rnx-kit/tree/main/incubator/yarn-plugin-external-workspaces#readme",
   "license": "MIT",
   "author": {
     "name": "Microsoft Open Source",
     "email": "microsoftopensource@users.noreply.github.com"
   },
+  "main": "src/index.ts",
   "files": [
     "lib/**/*.d.ts",
     "lib/**/*.js"
   ],
-  "main": "./src/index.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/microsoft/rnx-kit",
     "directory": "incubator/yarn-plugin-external-workspaces"
   },
   "engines": {
-    "node": ">=16.17"
+    "node": ">=18.12"
   },
   "scripts": {
     "build": "rnx-kit-scripts build --noEmit",
