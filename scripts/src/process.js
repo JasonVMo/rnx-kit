@@ -15,7 +15,7 @@ import { URL, fileURLToPath } from "node:url";
  * @returns {boolean}
  */
 function isRunningNx(command, args) {
-  return command.startsWith("yarn") && args[0] === "nx";
+  return command.startsWith("yarn") && (args[0] === "nx" || args[0] == "lage");
 }
 
 function workspaceRoot() {

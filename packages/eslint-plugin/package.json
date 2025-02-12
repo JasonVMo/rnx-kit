@@ -43,6 +43,7 @@
     "test": "rnx-kit-scripts test"
   },
   "dependencies": {
+    "@microsoft/eslint-plugin-sdl": "^1.0.0",
     "@react-native/eslint-plugin": "^0.76.0",
     "enhanced-resolve": "^5.8.3",
     "eslint-plugin-react": "^7.35.2",
@@ -53,7 +54,6 @@
     "eslint": ">=8.57.0"
   },
   "devDependencies": {
-    "@rnx-kit/eslint-config": "*",
     "@rnx-kit/scripts": "*",
     "@rnx-kit/tsconfig": "*",
     "@types/eslint": "^9.0.0",
